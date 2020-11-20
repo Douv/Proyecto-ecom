@@ -1,7 +1,26 @@
+import bcrypt from 'bcryptjs';
+
+
 const data = {
+
+  users: [
+    {
+      name:"Douv",
+      email: "admin@gmail.com",
+      password: bcrypt.hashSync('1234', 8),
+      isAdmin: true,
+    },
+    {
+      name: 'JJ',
+      email: 'jj@example.com',
+      password: bcrypt.hashSync('1234', 8),
+      isAdmin: false,
+    },
+  ],
+
     products: [
       {
-        _id: '1',
+       
         name: 'Canasta',
         category: 'Canasta',
         image: '/images/canasta.jpg',
@@ -13,8 +32,8 @@ const data = {
         description: 'high quality product',
       },
       {
-        _id: '2',
-        name: 'Canasta',
+       
+        name: 'Canaste',
         category: 'Canasta',
         image: '/images/img3.jpg',
         price: 120,
@@ -25,8 +44,8 @@ const data = {
         description: 'high quality product',
       },
       {
-        _id: '3',
-        name: 'Canasta',
+        
+        name: 'Canast',
         category: 'Canasta',
         image: '/images/img3.jpg',
         price: 120,
@@ -37,8 +56,8 @@ const data = {
         description: 'high quality product',
       },
       {
-        _id: '4',
-        name: 'Canasta',
+        
+        name: 'Canas',
         category: 'Canasta',
         image: '/images/img2.jpg',
         price: 120,
@@ -49,8 +68,8 @@ const data = {
         description: 'high quality product',
       },
       {
-        _id: '5',
-        name: 'Canasta',
+       
+        name: 'Canastas',
         category: 'Canasta',
         image: '/images/img1.jpg',
         price: 120,
@@ -61,8 +80,8 @@ const data = {
         description: 'high quality product',
       },
       {
-        _id: '6',
-        name: 'Canasta',
+        
+        name: 'Canasts',
         category: 'Canasta',
         image: '/images/canaste.jpeg',
         price: 120,
