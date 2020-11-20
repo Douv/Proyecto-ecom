@@ -56,6 +56,30 @@ const data = {
         description: 'high quality product',
       },
       {
+   
+        name: 'CaCa',
+        category: 'Canasta',
+        image: '/images/img3.jpg',
+        price: 120,
+        brand: 'GGC',
+        countInStock: 7,
+        rating: 4.5,
+        numReviews: 10,
+        description: 'high quality product',
+      },
+      {
+   
+        name: 'CaCaCa',
+        category: 'Canasta',
+        image: '/images/img3.jpg',
+        price: 120,
+        brand: 'GGC',
+        countInStock: 7,
+        rating: 4.5,
+        numReviews: 10,
+        description: 'high quality product',
+      },
+      {
         
         name: 'Canas',
         category: 'Canasta',
