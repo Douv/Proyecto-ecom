@@ -4,10 +4,13 @@ import { BrowserRouter, Link, Route } from 'react-router-dom';
 import CartScreen from './screens/CartScreen'
 import HomeScreen from './screens/HomeScreen';
 import RegisterScreen from './screens/RegisterScreen';
+import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import { signout } from './actions/userActions';
+import OrderScreen from './screens/OrderScreen';
 import ShippingAddressScreen from './screens/ShippingAddressScreen';
 import ProductScreen from './screens/ProductScreen';
 import SigninScreen from './screens/SigninScreen';
+import PaymentMethodScreen from './screens/PaymentMethodScreen';
 
 function App() {
 
@@ -62,6 +65,9 @@ function App() {
           <Route path="/cart/:id" component={CartScreen}></Route>
           <Route path="/product/:id" component={ProductScreen}></Route>
           <Route path="/register" component={RegisterScreen}></Route>
+          <Route path="/payment" component={PaymentMethodScreen}></Route>
+          <Route path="/order/:id" component={OrderScreen}></Route>
+          <Route path="/placeorder" component={PlaceOrderScreen}></Route>
           <Route path="/shipping" component={ShippingAddressScreen}></Route>
           <Route path="/signin" component={SigninScreen}></Route>
           <Route path="/" component={HomeScreen} exact></Route>
