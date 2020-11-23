@@ -10,6 +10,7 @@ import OrderScreen from './screens/OrderScreen';
 import ShippingAddressScreen from './screens/ShippingAddressScreen';
 import ProductScreen from './screens/ProductScreen';
 import SigninScreen from './screens/SigninScreen';
+import ProfileScreen from './screens/ProfileScreen';
 import PaymentMethodScreen from './screens/PaymentMethodScreen';
 
 function App() {
@@ -48,6 +49,9 @@ function App() {
                 </Link>
                 <ul className="dropdown-content">
                   <li>
+                    <Link to="/profile">User Profile</Link>
+                  </li>
+                  <li>
                     <Link to="#signout" onClick={signoutHandler}>
                       Sign Out
                     </Link>
@@ -67,6 +71,7 @@ function App() {
           <Route path="/register" component={RegisterScreen}></Route>
           <Route path="/payment" component={PaymentMethodScreen}></Route>
           <Route path="/order/:id" component={OrderScreen}></Route>
+          <Route path="/profile" component={ProfileScreen}></Route>
           <Route path="/placeorder" component={PlaceOrderScreen}></Route>
           <Route path="/shipping" component={ShippingAddressScreen}></Route>
           <Route path="/signin" component={SigninScreen}></Route>
