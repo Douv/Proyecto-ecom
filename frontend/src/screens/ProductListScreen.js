@@ -37,9 +37,9 @@ export default function ProductListScreen(props) {
   return (
     <div>
       <div className="row">
-        <h1>Products</h1>
+        <h1>Lista de Productos</h1>
         <button type="button" className="primary" onClick={createHandler}>
-          Create Product
+          Agregar Producto
         </button>
       </div>
       {loadingCreate && <LoadingBox></LoadingBox>}
@@ -54,11 +54,11 @@ export default function ProductListScreen(props) {
           <thead>
             <tr>
               <th>ID</th>
-              <th>NAME</th>
-              <th>PRICE</th>
-              <th>CATEGORY</th>
-              <th>BRAND</th>
-              <th>ACTIONS</th>
+              <th>NOMBRE</th>
+              <th>PRECIO</th>
+              <th>CATEGORIA</th>
+              <th>MARCA</th>
+              <th>ACCIONES</th>
             </tr>
           </thead>
           <tbody>
@@ -77,14 +77,14 @@ export default function ProductListScreen(props) {
                       props.history.push(`/product/${product._id}/edit`)
                     }
                   >
-                    Edit
+                    Editar
                   </button>
                   <button
                     type="button"
                     className="small"
                     onClick={() => deleteHandler(product)}
                   >
-                    Delete
+                    Eliminar
                   </button>
                 </td>
               </tr>
