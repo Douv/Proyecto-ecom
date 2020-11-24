@@ -30,10 +30,10 @@ export default function CartScreen(props) {
   return (
     <div className="row top">
       <div className="col-2">
-        <h1>Shopping Cart</h1>
+        <h1>Carrito de compra</h1>
         {cartItems.length === 0 ? (
           <MessageBox>
-            Cart is empty. <Link to="/">Go Shopping</Link>
+            El carrito está vacio. <Link to="/">Hacer compras</Link>
           </MessageBox>
         ) : (
           <ul>
@@ -72,7 +72,7 @@ export default function CartScreen(props) {
                       type="button"
                       onClick={() => removeFromCartHandler(item.product)}
                     >
-                      Delete
+                      Quitar
                     </button>
                   </div>
                 </div>
@@ -97,7 +97,7 @@ export default function CartScreen(props) {
                 className="primary block"
                 disabled={cartItems.length === 0}
               >
-                Proceed to Checkout
+                Procesar Pago
               </button>
             </li>
           </ul>
